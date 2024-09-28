@@ -11,7 +11,6 @@ const { keccak256 } = require("ethereum-cryptography/keccak");
 
 const PRIVATE_KEY = createPrivateKeySync();
 const originalPublicKey = secp256k1.getPublicKey(PRIVATE_KEY, true);
-const originalPublicKeyHex = toHex(originalPublicKey);
 
 // Derive the address from the original public key
 const originalPublicKeyHash = keccak256(originalPublicKey.slice(1)); // Remove the first byte (0x02 or 0x03)
