@@ -9,7 +9,7 @@ label {
   display: flex;
   flex-direction: column;
   letter-spacing: 0.05rem;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 400;
   color: #222;
 }
@@ -58,7 +58,7 @@ input {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: .9em;
+  font-size: 0.9em;
   &:hover {
     cursor: pointer;
   }
@@ -72,7 +72,7 @@ input {
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 400;
-    font-size: .9em;
+    font-size: 0.9em;
     display: inline-flex;
     margin-top: 10px;
     padding: 0.75rem;
@@ -83,4 +83,30 @@ input {
 .transfer {
   display: flex;
   flex-direction: column;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0.375rem;
+  border: 1px solid #cbd5e0;
+  background-color: #fdfdfe;
+  font-size: 1rem;
+  color: #4a5568;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="#4a5568" d="M2 0L0 2h4zM2 5L0 3h4z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.65em auto;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #319795;
+  box-shadow: 0 0 0 1px #319795;
+}
+
+option {
+  color: #4a5568;
 }
